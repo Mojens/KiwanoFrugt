@@ -8,7 +8,7 @@
       </button>
     </div>
 
-    <a href="#" class="text-white text-xl font-bold mx-auto lg:mx-0">Kiwano Frugt Engros</a>
+    <a href="/" class="text-white text-xl font-bold mx-auto lg:mx-0">Kiwano Frugt Engros</a>
 
     <div *ngIf="isMobileNavOpen" class="block lg:hidden ml-auto">
       <button class="text-white" (click)="toggleMobileNav()">
@@ -18,28 +18,38 @@
 
     <div class="hidden lg:flex flex-grow justify-center space-x-4">
 
-      <a href="#" class="text-white font-bold">Home</a>
-      <a href="#" class="text-white font-bold">About</a>
-      <a href="#" class="text-white font-bold">Services</a>
-      <a href="#" class="text-white font-bold">Contact</a>
+      <a href="/" class="text-white font-bold">Forside</a>
+      <a href="/produkter" class="text-white font-bold">Produkter</a>
+      <a href="/om-os" class="text-white font-bold">Om os</a>
+      <a href="/kontakt" class="text-white font-bold">Kontakt</a>
+      <a href="/faq" class="text-white font-bold">FAQ</a>
 
     </div>
 
     <div class="hidden lg:flex items-center space-x-4">
 
-      <a href="#" class="text-white">
+      <p-button class="text-white" pTooltip="Søg efter produkt" tooltipPosition="bottom" (click)="toogleSearchWindow()">
         <fa-icon [icon]="faSearch" class="text-2xl"></fa-icon>
-      </a>
+      </p-button>
+      <p-dialog [(visible)]="showSearchWindow" [style]="{width: '50vw'}" [modal]="true">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </p-dialog>
 
-      <a href="#" class="text-white">
+      <a href="/favoritter" class="text-white" pTooltip="Favoritter" tooltipPosition="bottom">
         <fa-icon [icon]="faHeart" class="text-2xl"></fa-icon>
       </a>
 
-      <a href="#" class="text-white">
+      <a href="/kurv" class="text-white" pTooltip="Kurv" tooltipPosition="bottom">
         <fa-icon [icon]="faCartShopping" class="text-2xl"></fa-icon>
       </a>
 
-      <a href="#" class="text-white">
+      <a href="/konto" class="text-white" pTooltip="Min konto" tooltipPosition="bottom">
         <fa-icon [icon]="faUser" class="text-2xl"></fa-icon>
       </a>
 

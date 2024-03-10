@@ -11,6 +11,7 @@ import {HomepageComponent} from "./features/homepage/homepage.component";
 import {ContactComponent} from "./features/contact/contact.component";
 import {FavouritesComponent} from "./features/favourites/favourites.component";
 import {FaqComponent} from "./features/faq/faq.component";
+import {AccountComponent} from "./features/account/account.component";
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'produkter', component: ProductsComponent},
   { path: 'kontakt', component: ContactComponent },
   { path: 'favoritter', component: FavouritesComponent },
-  { path: 'faq', component: FaqComponent }
+  { path: 'faq', component: FaqComponent },
+  { path: 'konto', component: AccountComponent }
 ]
 
 @NgModule({

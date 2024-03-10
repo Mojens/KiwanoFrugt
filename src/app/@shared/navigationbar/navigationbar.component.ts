@@ -14,12 +14,16 @@ export class NavigationbarComponent {
   faBars = faBars;
   faTimes = faTimes;
   isMobileNavOpen = false;
+  showSearchWindow = false;
 
   constructor() { }
 
 
   toggleMobileNav() {
     this.isMobileNavOpen = !this.isMobileNavOpen;
+  }
+  toogleSearchWindow() {
+    this.showSearchWindow = true;
   }
 
 }

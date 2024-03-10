@@ -22,6 +22,11 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {IconFieldModule} from "primeng/iconfield";
 import {InputIconModule} from "primeng/inputicon";
 import {InputTextModule} from "primeng/inputtext";
+import { AccountComponent } from './features/account/account.component';
+import {TooltipModule} from "primeng/tooltip";
+import {DialogModule} from "primeng/dialog";
+import {ButtonModule} from "primeng/button";
+import {ConfirmDialogModule} from "primeng/confirmdialog";
 
 @NgModule({
   declarations: [
@@ -38,7 +43,8 @@ import {InputTextModule} from "primeng/inputtext";
     CheckoutComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
-    FaqComponent
+    FaqComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,11 @@ import {InputTextModule} from "primeng/inputtext";
     FaIconComponent,
     IconFieldModule,
     InputIconModule,
-    InputTextModule
+    InputTextModule,
+    TooltipModule,
+    DialogModule,
+    ButtonModule,
+    ConfirmDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
