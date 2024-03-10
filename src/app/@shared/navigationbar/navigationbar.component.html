@@ -28,18 +28,13 @@
 
     <div class="hidden lg:flex items-center space-x-4">
 
-      <p-button class="text-white" pTooltip="Søg efter produkt" tooltipPosition="bottom" (click)="toogleSearchWindow()">
-        <fa-icon [icon]="faSearch" class="text-2xl"></fa-icon>
-      </p-button>
-      <p-dialog [(visible)]="showSearchWindow" [style]="{width: '50vw'}" [modal]="true">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-      </p-dialog>
+      <p-iconField iconPosition="right">
+        <p-inputIcon styleClass="pi pi-search" class="ml-4 cursor-pointer"></p-inputIcon>
+        <input type="text" pInputText placeholder="Søg efter produkt">
+      </p-iconField>
+
+
+
 
       <a href="/favoritter" class="text-white" pTooltip="Favoritter" tooltipPosition="bottom">
         <fa-icon [icon]="faHeart" class="text-2xl"></fa-icon>
