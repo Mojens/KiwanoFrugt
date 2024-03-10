@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faUser, faHeart, faCartShopping, faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faHeart, faCartShopping, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-navigationbar',
@@ -10,20 +10,15 @@ export class NavigationbarComponent {
   faUser = faUser;
   faHeart = faHeart;
   faCartShopping = faCartShopping;
-  faSearch = faSearch;
   faBars = faBars;
   faTimes = faTimes;
   isMobileNavOpen = false;
-  showSearchWindow = false;
 
   constructor() { }
 
 
   toggleMobileNav() {
     this.isMobileNavOpen = !this.isMobileNavOpen;
-  }
-  toogleSearchWindow() {
-    this.showSearchWindow = true;
   }
 
 }
