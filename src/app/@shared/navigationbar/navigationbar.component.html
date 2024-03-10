@@ -8,17 +8,14 @@
       </button>
     </div>
 
-    <!-- Logo -->
     <a href="#" class="text-white text-xl font-bold mx-auto lg:mx-0">Kiwano Frugt Engros</a>
 
-    <!-- Close Icon for Mobile -->
     <div *ngIf="isMobileNavOpen" class="block lg:hidden ml-auto">
       <button class="text-white" (click)="toggleMobileNav()">
         <fa-icon [icon]="faTimes" class="text-2xl"></fa-icon>
       </button>
     </div>
 
-    <!-- Navigation Links -->
     <div class="hidden lg:flex flex-grow justify-center space-x-4">
 
       <a href="#" class="text-white font-bold">Home</a>
@@ -28,31 +25,28 @@
 
     </div>
 
-    <!-- Icon Field on the Right -->
     <div class="hidden lg:flex items-center space-x-4">
 
-      <!-- Search Icon -->
       <a href="#" class="text-white">
         <fa-icon [icon]="faSearch" class="text-2xl"></fa-icon>
       </a>
-      <!-- Heart Icon -->
+
       <a href="#" class="text-white">
         <fa-icon [icon]="faHeart" class="text-2xl"></fa-icon>
       </a>
-      <!-- Shopping Cart Icon -->
+
       <a href="#" class="text-white">
         <fa-icon [icon]="faCartShopping" class="text-2xl"></fa-icon>
       </a>
-      <!-- User Icon -->
+
       <a href="#" class="text-white">
         <fa-icon [icon]="faUser" class="text-2xl"></fa-icon>
       </a>
 
     </div>
 
-    <!-- Mobile Navigation Menu -->
+
     <div *ngIf="isMobileNavOpen" class="lg:hidden absolute top-0 left-0 w-full h-full bg-blue-500">
-      <!-- Mobile Navigation Links -->
       <div class="flex flex-col items-center mt-16 space-y-4">
         <div *ngIf="isMobileNavOpen" class="block lg:hidden ml-auto mr-5">
           <button class="text-white" (click)="toggleMobileNav()">
@@ -63,6 +57,15 @@
         <a href="#" class="text-white font-bold">About</a>
         <a href="#" class="text-white font-bold">Services</a>
         <a href="#" class="text-white font-bold">Contact</a>
+        <a href="#" class="text-white">
+          <fa-icon [icon]="faHeart" class="text-2xl"></fa-icon>
+        </a>
+        <a href="#" class="text-white">
+          <fa-icon [icon]="faCartShopping" class="text-2xl"></fa-icon>
+        </a>
+        <a href="#" class="text-white">
+          <fa-icon [icon]="faUser" class="text-2xl"></fa-icon>
+        </a>
       </div>
     </div>
 
