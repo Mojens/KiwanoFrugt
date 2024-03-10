@@ -17,6 +17,7 @@ import { FooterComponent } from './@shared/footer/footer.component';
 import { CheckoutComponent } from './features/checkout/checkout.component';
 import { ForgotPasswordComponent } from './core/auth/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './core/auth/reset-password/reset-password.component';
+import { FaqComponent } from './features/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ResetPasswordComponent } from './core/auth/reset-password/reset-passwor
     FooterComponent,
     CheckoutComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
