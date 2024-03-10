@@ -12,12 +12,13 @@ import {ContactComponent} from "./features/contact/contact.component";
 import {FavouritesComponent} from "./features/favourites/favourites.component";
 import {FaqComponent} from "./features/faq/faq.component";
 import {AccountComponent} from "./features/account/account.component";
+import {TermsComponent} from "./features/terms/terms.component";
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'log-ind', component: LoginComponent },
-  { path: 'glemt-adgangskode', component: ForgotPasswordComponent },
-  { path: 'nulstil-adgangskode/:reset-token', component: ResetPasswordComponent },
+  { path: 'log-ind', component: LoginComponent, data: { hideNavbar: true } },
+  { path: 'glemt-adgangskode', component: ForgotPasswordComponent, data: { hideNavbar: true } },
+  { path: 'nulstil-adgangskode/:reset-token', component: ResetPasswordComponent, data: { hideNavbar: true } },
   { path: 'om-os', component: AboutUsComponent },
   { path: 'kurv', component: BasketComponent },
   { path: 'checkout', component: CheckoutComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'kontakt', component: ContactComponent },
   { path: 'favoritter', component: FavouritesComponent },
   { path: 'faq', component: FaqComponent },
-  { path: 'konto', component: AccountComponent }
+  { path: 'konto', component: AccountComponent },
+  { path: 'Handelsbetingelser', component: TermsComponent}
 ]
 
 @NgModule({

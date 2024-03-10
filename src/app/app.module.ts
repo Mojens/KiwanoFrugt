@@ -27,6 +27,7 @@ import {TooltipModule} from "primeng/tooltip";
 import {DialogModule} from "primeng/dialog";
 import {ButtonModule} from "primeng/button";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
+import { TermsComponent } from './features/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {ConfirmDialogModule} from "primeng/confirmdialog";
     ForgotPasswordComponent,
     ResetPasswordComponent,
     FaqComponent,
-    AccountComponent
+    AccountComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
