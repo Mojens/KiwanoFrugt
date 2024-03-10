@@ -28,6 +28,7 @@ import {DialogModule} from "primeng/dialog";
 import {ButtonModule} from "primeng/button";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import { TermsComponent } from './features/terms/terms.component';
+import {DividerModule} from "primeng/divider";
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { TermsComponent } from './features/terms/terms.component';
     TooltipModule,
     DialogModule,
     ButtonModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -48,24 +48,25 @@
     </div>
 
 
-    <div *ngIf="isMobileNavOpen" class="lg:hidden absolute top-0 left-0 w-full h-full bg-blue-500">
+    <div *ngIf="isMobileNavOpen" class="lg:hidden fixed top-0 left-0 w-full h-full bg-blue-500 z-50">
       <div class="flex flex-col items-center mt-16 space-y-4">
-        <div *ngIf="isMobileNavOpen" class="block lg:hidden ml-auto mr-5">
+        <div class="block lg:hidden ml-auto mr-5">
           <button class="text-white" (click)="toggleMobileNav()">
             <fa-icon [icon]="faTimes" class="text-2xl"></fa-icon>
           </button>
         </div>
-        <a href="#" class="text-white font-bold">Home</a>
-        <a href="#" class="text-white font-bold">About</a>
-        <a href="#" class="text-white font-bold">Services</a>
-        <a href="#" class="text-white font-bold">Contact</a>
-        <a href="#" class="text-white">
+        <a href="/" class="text-white font-bold">Forside</a>
+        <a href="/produkter" class="text-white font-bold">Produkter</a>
+        <a href="/om-os" class="text-white font-bold">Om os</a>
+        <a href="/kontakt" class="text-white font-bold">Kontakt</a>
+        <a href="/faq" class="text-white font-bold">FAQ</a>
+        <a href="/favoritter" class="text-white">
           <fa-icon [icon]="faHeart" class="text-2xl"></fa-icon>
         </a>
-        <a href="#" class="text-white">
+        <a href="/kurv" class="text-white">
           <fa-icon [icon]="faCartShopping" class="text-2xl"></fa-icon>
         </a>
-        <a href="#" class="text-white">
+        <a href="/konto" class="text-white">
           <fa-icon [icon]="faUser" class="text-2xl"></fa-icon>
         </a>
       </div>
