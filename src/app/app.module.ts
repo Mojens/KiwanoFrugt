@@ -29,6 +29,7 @@ import {ButtonModule} from "primeng/button";
 import {ConfirmDialogModule} from "primeng/confirmdialog";
 import { TermsComponent } from './features/terms/terms.component';
 import {DividerModule} from "primeng/divider";
+import {RippleModule} from "primeng/ripple";
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import {DividerModule} from "primeng/divider";
     DialogModule,
     ButtonModule,
     ConfirmDialogModule,
-    DividerModule
+    DividerModule,
+    RippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
