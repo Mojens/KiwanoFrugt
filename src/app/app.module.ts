@@ -18,6 +18,7 @@ import { CheckoutComponent } from './features/checkout/checkout.component';
 import { ForgotPasswordComponent } from './core/auth/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './core/auth/reset-password/reset-password.component';
 import { FaqComponent } from './features/faq/faq.component';
+import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FaqComponent } from './features/faq/faq.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgbCollapseModule
+    NgbCollapseModule,
+    FaIconComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
