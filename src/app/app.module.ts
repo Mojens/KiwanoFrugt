@@ -19,6 +19,9 @@ import { ForgotPasswordComponent } from './core/auth/forgot-password/forgot-pass
 import { ResetPasswordComponent } from './core/auth/reset-password/reset-password.component';
 import { FaqComponent } from './features/faq/faq.component';
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
+import {IconFieldModule} from "primeng/iconfield";
+import {InputIconModule} from "primeng/inputicon";
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
     AppRoutingModule,
     NgbModule,
     NgbCollapseModule,
-    FaIconComponent
+    FaIconComponent,
+    IconFieldModule,
+    InputIconModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
