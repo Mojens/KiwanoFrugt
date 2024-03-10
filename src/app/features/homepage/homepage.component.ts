@@ -7,4 +7,6 @@ import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
+  faAddressBook = faAddressBook;
+
 }
