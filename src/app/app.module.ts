@@ -32,6 +32,8 @@ import {DividerModule} from "primeng/divider";
 import {RippleModule} from "primeng/ripple";
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { NotFoundPageComponent } from './@shared/not-found-page/not-found-page.component';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { NotFoundPageComponent } from './@shared/not-found-page/not-found-page.c
     ConfirmDialogModule,
     DividerModule,
     RippleModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    RadioButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

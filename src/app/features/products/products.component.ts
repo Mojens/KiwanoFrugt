@@ -9,7 +9,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class ProductsComponent implements OnInit {
   items: MenuItem[] | undefined;
-
+  ingredient!: string;
   home: MenuItem | undefined;
   ngOnInit(): void {
     this.items = [{ label: 'Produkter', routerLink: '/produkter' }];
