@@ -30,6 +30,8 @@ import {ConfirmDialogModule} from "primeng/confirmdialog";
 import { TermsComponent } from './features/terms/terms.component';
 import {DividerModule} from "primeng/divider";
 import {RippleModule} from "primeng/ripple";
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { NotFoundPageComponent } from './@shared/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import {RippleModule} from "primeng/ripple";
     ResetPasswordComponent,
     FaqComponent,
     AccountComponent,
-    TermsComponent
+    TermsComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +67,8 @@ import {RippleModule} from "primeng/ripple";
     ButtonModule,
     ConfirmDialogModule,
     DividerModule,
-    RippleModule
+    RippleModule,
+    BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
